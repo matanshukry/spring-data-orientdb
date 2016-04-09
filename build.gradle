@@ -1,0 +1,7 @@
+defaultTasks 'mvnInstall'
+
+task mvnInstall(type: Exec) {
+    workingDir '.'
+
+    commandLine 'cmd', '/c', 'mvn install -DskipTests'
+}
